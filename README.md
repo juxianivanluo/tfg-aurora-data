@@ -26,7 +26,7 @@ Este cuaderno implementa las reglas de negocio y calidad de datos para eliminar 
 * **Tratamiento Demográfico:** Identificación y asignación de nulos (`NaN`) para años de nacimiento inconsistentes (registros fuera del rango 1950-2007) y generación de una nueva columna categórica para cohortes generacionales (*BabyBoom, GenX, GenY, GenZ, Alfa*).
 * **Limpieza de Consumos Incongruentes:**
   * *Electricidad:* Exclusión de consumos fuera de la ventana técnica de [50, 5000) kWh.
-  * *Transporte:* Eliminación de consumos negativos o superiores a 12,432 kWh, preservando los registros en 0 únicamente si corresponden a movilidad activa (`walking` o `bike`).
+  * *Transporte:* Eliminación de consumos negativos o superiores a 12.432 kWh, preservando los registros en 0 únicamente si corresponden a movilidad activa (`walking` o `bike`).
   * *Calefacción:* Eliminación de consumos atípicos inferiores a 50 kWh.
 * **Optimización Estructural y Consolidación:** Actualización del dataset maestro mediante `.update()` y eliminación de columnas redundantes o vacías para cada caso específico (p. ej., eliminar variables de transporte y calefacción dentro de la tabla de electricidad), previniendo la dispersión de datos (*sparsity*).
 
