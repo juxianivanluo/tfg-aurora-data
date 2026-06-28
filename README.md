@@ -4,7 +4,7 @@ Código Python para el procesamiento, limpieza y categorización de datos de AUR
 
 ---
 
-## 📝 Descripción del Proyecto
+## Descripción del Proyecto
 
 Este repositorio contiene el flujo de trabajo (*pipeline*) desarrollado en Python para el procesamiento, depuración y estructuración de los datos procedentes de la aplicación **AURORA Energy Tracker**. El objetivo principal es transformar un conjunto de datos masivo e inicialmente anidado en ficheros relacionales estructurados, optimizados para su explotación estadística directa en **SPSS**.
 
@@ -12,7 +12,7 @@ El desarrollo se ha estructurado de forma modular en dos cuadernos de Jupyter (`
 
 ---
 
-## 🛠️ Estructura del Pipeline de Datos
+## Estructura del Pipeline de Datos
 
 ### 1. `01_JSON_a_CSV.ipynb` (Extracción y Aplanado)
 Este cuaderno realiza la ingesta de los datos en bruto y resuelve la complejidad de las estructuras jerárquicas del JSON.
@@ -32,7 +32,7 @@ Este cuaderno implementa las reglas de negocio y calidad de datos para eliminar 
 
 ---
 
-## 📊 Outputs Generados
+## Outputs Generados
 
 El pipeline concluye de manera automática con la exportación de cuatro productos de datos listos para ser importados en SPSS:
 
@@ -43,7 +43,7 @@ El pipeline concluye de manera automática con la exportación de cuatro product
 
 ---
 
-## 🚀 Requisitos e Instalación
+## Requisitos e Instalación
 
 Para ejecutar estos cuadernos de manera local, asegúrate de contar con Python 3.x instalado junto con las siguientes librerías de soporte:
 
